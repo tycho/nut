@@ -277,6 +277,7 @@ static int libusb_open(usb_dev_handle **udevp, USBDevice_t *curDevice, USBDevice
 				}
 
 				if (retries-- > 0) {
+					sleep(2);
 					continue;
 				}
 
